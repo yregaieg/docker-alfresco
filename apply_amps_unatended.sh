@@ -4,8 +4,7 @@
 # -------
 set -e
 pushd $(dirname $0)>/dev/null
-export SCRIPTPATH=$(pwd)
-export ALF_HOME=${SCRIPTPATH%/*}
+export ALF_HOME=/opt/alfresco*/
 export CATALINA_HOME=$ALF_HOME/tomcat
 required_java_version="1.7"
 
